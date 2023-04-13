@@ -88,3 +88,12 @@ button[type="submit"]:hover {
   color: #fff;
   border: 2px solid #fff;
 }
+
+.user-input p {
+  font-size: 22px;
+}
+
+.user-input data {
+  font-size: 12px;
+  color: red;
+}
