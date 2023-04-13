@@ -11,7 +11,7 @@
 
 :root {
   --mainColor: rgb(51, 51, 51);
-  --mainColortrans: rgba(56, 56, 56, 0.808);
+  --mainColortrans: rgba(56, 56, 56, 0.493);
   --mainColorLight: rgb(160, 160, 160);
   --secondaryColor: rgb(128, 2, 167);
   --textColor:#eee;
@@ -118,7 +118,9 @@ header .nav-btn {
 
 .content {
   display: flex;
-  margin: 50px;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
 }
 
 .content p {
@@ -134,18 +136,18 @@ header .nav-btn {
 }
 
 .content-left {
-  
-  display: flex;
+  display: flex; 
   justify-content: center;
   width: 50%;
+
+  
 }
 
 .content-right {
-  box-shadow: 0 0 20px;
-  border-radius: 20px;
-  background-color: var(--mainColortrans);
-  width: 50%;
-  padding: 20px;
+  display: flex; 
+  flex-direction: column;
+  width: 40%;
+  
   
 
 }
@@ -155,6 +157,24 @@ header .nav-btn {
   box-shadow: 0 0 20px;
   width: 400px;
   height: 700px;
+}
+
+
+@media (max-width: 800px) {
+  .content {
+    display: flex;
+    flex-direction: column; 
+  
+  }
+
+  .content-right {
+    width: 370px;
+    border: 5px solid black;
+    box-shadow: 0 0 20px;
+    background-color: var(--mainColortrans);
+    padding: 10px;
+  }
+
 }
 
 /*Content HOME PAGE END*/
