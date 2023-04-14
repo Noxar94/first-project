@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import "../styles/form.css";
+import "animate.css";
 
 class Form extends Component {
   constructor(props) {
@@ -52,22 +53,29 @@ class Form extends Component {
             type="text"
             value={fullName}
             onChange={this.handlefullNameChange}
+            required
           />
 
-          <label>email:</label>
-          <input type="text" value={email} onChange={this.handleEmailChange} />
+          <label>Email:</label>
+          <input
+            type="text"
+            value={email}
+            onChange={this.handleEmailChange}
+            required
+          />
 
           <label>Message</label>
           <textarea
             value={message}
             onChange={this.handleMessageChange}
             placeholder="Message:"
+            required
           ></textarea>
 
           <button type="submit">Submit</button>
         </form>
         {submittedData.map((data, index) => (
-          <div key={index} className="user-input">
+          <div key={index} className="user-input animate__backInUp">
             <p>Full Name: {data.fullName}</p>
             <p>Email: {data.email}</p>
             <p>Message: {data.message}</p>

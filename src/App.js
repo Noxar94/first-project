@@ -15,7 +15,7 @@ function App() {
         {" "}
         {/* put my routes in a div to only update the div and not the whole site. */}
         <Routes>
-          <Route path="/home" element={<Home />} />
+          <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
         </Routes>

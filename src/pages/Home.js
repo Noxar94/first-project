@@ -1,4 +1,5 @@
 import selfie from "./images/img1.jpg";
+import "../styles/home.css";
 
 export default function Home() {
   return (

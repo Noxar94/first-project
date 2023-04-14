@@ -1,0 +1,60 @@
+.open-btn {
+  width: 100px;
+  height: 30px;
+  background-color: rgb(255, 255, 255, 0);
+  border: none;
+  border-radius: 10px;
+  font-size: 22px;
+  text-shadow: 0 0 20px #00b7ff;
+  animation: heartBeat;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+
+  color: #00b7ff;
+}
+
+.open-btn:hover {
+  cursor: pointer;
+  color: var(--secondaryColor);
+}
+
+.close-btn {
+  width: 100px;
+  height: 50px;
+  background-color: rgba(173, 17, 17, 0.479);
+  border-radius: 10px;
+  border: 1px solid rgb(0, 0, 0);
+  box-shadow: 0 0 15px rgba(255, 0, 0, 0.678);
+  font-weight: 500;
+  margin-bottom: 20px;
+  color: rgb(255, 255, 255);
+}
+
+.close-btn:hover {
+  cursor: pointer;
+  background-color: rgb(153, 27, 27);
+  transition: 1s;
+}
+
+.modal-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 5px solid rgb(255, 255, 255);
+  border-radius: 20%;
+  box-shadow: 0 0 100px rgb(141, 141, 141);
+  background: linear-gradient(
+    45deg,
+    rgb(107, 9, 153) 0%,
+    rgb(119, 79, 143) 50%,
+    rgb(78, 2, 165) 100%
+  );
+}
+
+.modal-box p {
+  text-align: center;
+  font-size: 18px;
+  font-weight: 500;
+  color: white;
+}
