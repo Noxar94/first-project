@@ -64,7 +64,7 @@ class Form extends Component {
             required
           />
 
-          <label>Message</label>
+          <label>Message:</label>
           <textarea
             value={message}
             onChange={this.handleMessageChange}

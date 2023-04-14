@@ -6,15 +6,15 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  margin-top: 30px;
+  margin-top: 50px;
 }
 
 .form-container {
-  width: 50%;
+  width: 30%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 20px;
+  padding: 10px;
   background-color: rgba(0, 0, 0, 0.55);
   border-radius: 10px;
 }
@@ -24,7 +24,7 @@ input,
 textarea,
 select {
   width: 100%;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   padding: 10px;
   font-size: 22px;
   color: rgb(255, 255, 255);
@@ -78,13 +78,14 @@ button[type="submit"]:hover {
 }
 
 .user-input {
-  width: 60%;
+  width: 30%;
   padding: 50px;
   margin-top: 25px;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  flex-shrink: ;
   background-color: rgba(0, 0, 0, 0.55);
   color: #fff;
   border: 2px solid #ffffff;
@@ -92,7 +93,6 @@ button[type="submit"]:hover {
   box-shadow: 0 0 20px #b700ff;
   animation: backInUp;
   animation-duration: 1s;
-  overflow: hidden;
 }
 
 .user-input p {
@@ -100,5 +100,25 @@ button[type="submit"]:hover {
   text-align: center;
 }
 
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 450px) {
+  label,
+  input,
+  textarea,
+  select {
+    font-size: 18px;
+  }
+
+  .form-container {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.55);
+    border-radius: 10px;
+  }
+
+  .user-input {
+    width: 60%;
+  }
 }

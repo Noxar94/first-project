@@ -5,7 +5,7 @@
   border: none;
   border-radius: 10px;
   font-size: 22px;
-  text-shadow: 0 0 20px #00b7ff;
+  text-shadow: 0 0 5px #00b7ff;
   animation: heartBeat;
   animation-duration: 2s;
   animation-iteration-count: infinite;
