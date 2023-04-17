@@ -27,6 +27,7 @@ nav a {
 
 nav a:hover {
   color: var(--secondaryColor);
+  transition: 1s;
 }
 
 header .nav-btn {
@@ -62,6 +63,7 @@ header .nav-btn {
     background-color: var(--mainColor);
     transition: 1s ease-in-out;
     transform: translateY(-100vh);
+    z-index: 9999;
   }
 
   header .responsive_nav {

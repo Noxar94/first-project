@@ -1,5 +1,6 @@
 import selfie from "./images/img1.jpg";
 import "../styles/home.css";
+import { Link } from "react-router-dom";
 
 export default function Home() {
   return (
@@ -9,13 +10,20 @@ export default function Home() {
       </div>
 
       <div className="content-right">
-        <h2>Hello There</h2>
+        <h2>Hello There and welcome to my site!</h2>
         <p>
           My name is Jonatan Lundmark. <br />
           i'm 28 y/o and i live in Skara.
           <br />
           I live with my girlfriend and our two dogs! <br />
         </p>
+        <h3 className="titel-button">
+          Want to know a little more about me ? <br />
+          click below:
+        </h3>
+        <button className="home-button">
+          <Link to="/About">About</Link>
+        </button>
       </div>
     </div>
   );

@@ -85,7 +85,6 @@ button[type="submit"]:hover {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  flex-shrink: ;
   background-color: rgba(0, 0, 0, 0.55);
   color: #fff;
   border: 2px solid #ffffff;
