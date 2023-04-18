@@ -37,7 +37,7 @@ class Form extends Component {
   handleSubmit = (event) => {
     event.preventDefault(); // Prevents the default form submission.
     const { fullName, email, message, submittedData } = this.state;
-    const newData = { fullName, email, message };
+    const newData = { fullName, email, message }; //saves the current data into the submittedData array in the component's state. It also clears the form fields by resetting the fullName, email, and message properties of the component's state to empty strings.
     this.setState({
       submittedData: [...submittedData, newData],
       fullName: "",

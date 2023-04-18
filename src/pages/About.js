@@ -1,11 +1,11 @@
-import React from "react";
-import "../styles/about.css";
-import { FaDog } from "react-icons/fa";
-import { MdComputer, MdGirl } from "react-icons/md";
+import React from "react"; //react
+import "../styles/about.css"; //css
+import { FaDog } from "react-icons/fa"; //icons
+import { MdComputer, MdGirl } from "react-icons/md"; //icons
 
-import MeImage from "./images/wilma&me.jpg";
-import Dog1 from "./images/Maxi.jpg";
-import Dog2 from "./images/lunaout.jpg";
+import MeImage from "./images/wilma&me.jpg"; //img
+import Dog1 from "./images/Maxi.jpg"; //img
+import Dog2 from "./images/lunaout.jpg"; //img
 
 const About = () => {
   return (
@@ -27,7 +27,7 @@ const About = () => {
             <article className="about_card">
               <MdComputer className="about__icon" />
               <h5>Computer</h5>
-              <small>Since i was 5 y/o</small>
+              <small>Since i was 5 y/o i've been building computers</small>
             </article>
 
             <article className="about_card">

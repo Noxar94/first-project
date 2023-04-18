@@ -12,8 +12,12 @@ const Footer = () => {
         </div>
         <ul className="footer-info">
           <li>
+            <h5>Name: Jonatan Lundmark</h5>
+          </li>
+          <li>
             <h5>Email: Lundmark1223@hotmail.se</h5>
           </li>
+
           <li>
             <h5>
               Socials:

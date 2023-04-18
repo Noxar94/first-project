@@ -1,7 +1,7 @@
-import React, { Component } from "react";
-import "../styles/form.css";
-import "../styles/contact.css";
-import Form from "../components/form";
+import React, { Component } from "react"; //react
+import "../styles/form.css"; //css
+import "../styles/contact.css"; //css
+import Form from "../components/form"; //form
 
 class Contact extends Component {
   render() {

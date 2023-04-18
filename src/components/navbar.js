@@ -1,15 +1,17 @@
-import { Link } from "react-router-dom";
-import { useRef } from "react";
-import { FaBars, FaTimes } from "react-icons/fa";
-import React, { useState } from "react";
-import "../styles/navbar.css";
-import Modal from "../components/modal";
+import { Link } from "react-router-dom"; // Link instead of a
+import { useRef } from "react"; // add a ref attribute to an element to access it directly.
+import { FaBars, FaTimes } from "react-icons/fa"; // icons
+import React from "react"; // react
+import "../styles/navbar.css"; //navbar
+
 import "animate.css";
 
 export default function Navbar() {
   const navRef = useRef();
 
   const showNavbar = () => {
+    // toggle navbar
+
     navRef.current.classList.toggle("responsive_nav");
   };
   return (

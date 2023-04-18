@@ -1,6 +1,6 @@
-import selfie from "./images/img1.jpg";
-import "../styles/home.css";
-import { Link } from "react-router-dom";
+import selfie from "./images/img1.jpg"; //img
+import "../styles/home.css"; //css
+import { Link } from "react-router-dom"; // Link instead of a
 
 export default function Home() {
   return (
