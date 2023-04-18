@@ -4,6 +4,7 @@ import Footer from "./components/footer";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
+import Modal from "./components/modal";
 import { Route, Routes } from "react-router-dom";
 
 function App() {
@@ -11,6 +12,7 @@ function App() {
     <>
       <Navbar />
       <Footer />
+      <Modal />
       <div className="page-route">
         {" "}
         {/* put my routes in a div to only update the div and not the whole site. */}

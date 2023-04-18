@@ -57,6 +57,12 @@ const About = () => {
               <img src={Dog2} alt="luna" />
             </div>
           </div>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam at
+            officia vero quod eius voluptate cupiditate vitae pariatur soluta
+            dolore dolores quidem eveniet, explicabo fugit ad eum exercitationem
+            dicta aliquam.
+          </p>
         </div>
       </div>
     </section>

@@ -6,14 +6,8 @@ import "../styles/navbar.css";
 import Modal from "../components/modal";
 import "animate.css";
 
-const BUTTON_WRAPPER_STYLES = {
-  position: "relative",
-  zIndex: 1,
-};
-
 export default function Navbar() {
   const navRef = useRef();
-  const [isOpen, setIsOpen] = useState(false);
 
   const showNavbar = () => {
     navRef.current.classList.toggle("responsive_nav");
@@ -25,21 +19,6 @@ export default function Navbar() {
         <Link to="/">Home</Link>
         <Link to="/About">About</Link>
         <Link to="/contact">Contact</Link>
-
-        <button
-          className="open-btn animate__heartBeat"
-          style={BUTTON_WRAPPER_STYLES}
-          onClick={() => setIsOpen(true)}
-        >
-          INFO
-        </button>
-
-        <Modal open={isOpen} onClose={() => setIsOpen(false)}>
-          <p>
-            Welcome to my site, keep in mind this is a work in progress website
-            and will take some time to finnish!
-          </p>
-        </Modal>
 
         <button className="nav-btn nav-close-btn" onClick={showNavbar}>
           <FaTimes />

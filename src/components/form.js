@@ -10,29 +10,32 @@ class Form extends Component {
       fullName: "",
       message: "",
       email: "",
-      submittedData: [],
+      submittedData: [], // submitted data saved in array before data is sent.
     };
   }
 
   handlefullNameChange = (event) => {
+    // Handles the full name event value
     this.setState({
       fullName: event.target.value,
     });
   };
 
   handleEmailChange = (event) => {
+    // Handles the Email event value
     this.setState({
       email: event.target.value,
     });
   };
   handleMessageChange = (event) => {
+    // Handles the message event value
     this.setState({
       message: event.target.value,
     });
   };
 
   handleSubmit = (event) => {
-    event.preventDefault(); // Prevents the default form submission behavior
+    event.preventDefault(); // Prevents the default form submission.
     const { fullName, email, message, submittedData } = this.state;
     const newData = { fullName, email, message };
     this.setState({
@@ -74,6 +77,7 @@ class Form extends Component {
 
           <button type="submit">Submit</button>
         </form>
+
         {submittedData.map((data, index) => (
           <div key={index} className="user-input animate__backInUp">
             <p>Full Name: {data.fullName}</p>

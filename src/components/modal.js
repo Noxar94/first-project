@@ -1,39 +1,38 @@
-import React from "react";
-import ReactDom from "react-dom";
+import React, { useState } from "react";
+
 import "../styles/modal.css";
 
-const MODAL_STYLES = {
-  position: "fixed",
-  top: "50%",
-  left: "50%",
-  transform: "translate(-50%, -50%)",
-  padding: "50px",
-  zIndex: 1000,
-};
+export default function Modal() {
+  const [modal, setModal] = useState(false);
 
-const OVERLAY_STYLES = {
-  position: "fixed",
-  top: 0,
-  left: 0,
-  right: 0,
-  bottom: 0,
-  backgroundColor: "rgba(0, 0, 0, 0.95)",
-  zIndex: 1000,
-};
+  const toggleModal = () => {
+    setModal(!modal);
+  };
 
-export default function modal({ open, children, onClose }) {
-  if (!open) return null;
+  if (modal) {
+    document.body.classList.add("active-modal");
+  } else {
+    document.body.classList.remove("active-modal");
+  }
 
-  return ReactDom.createPortal(
+  return (
     <>
-      <div className="overlay-modal" style={OVERLAY_STYLES}></div>
-      <div className="modal-box" style={MODAL_STYLES}>
-        <button className="close-btn" onClick={onClose}>
-          Close Modal
-        </button>
-        {children}
-      </div>
-    </>,
-    document.getElementById("portal")
+      <button onClick={toggleModal} className="btn-modal">
+        Info!
+      </button>
+
+      {modal && (
+        <div className="modal">
+          <div onClick={toggleModal} className="overlay"></div>
+          <div className="modal-content">
+            <h2>OBS!</h2>
+            <p>Keep in mind! This site is under constuction!</p>
+            <button className="close-modal" onClick={toggleModal}>
+              CLOSE
+            </button>
+          </div>
+        </div>
+      )}
+    </>
   );
 }
